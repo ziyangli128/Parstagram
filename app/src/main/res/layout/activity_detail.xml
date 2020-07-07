@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_margin="8dp">
-
+    android:layout_margin="16dp">
 
     <TextView
         android:id="@+id/tvUsername"
@@ -27,7 +26,12 @@
         android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="2"
         android:textSize="18sp"
         tools:text="Description" />
+
+    <TextView
+        android:id="@+id/tvCreatedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Created at: 07/07/2020" />
 </LinearLayout>

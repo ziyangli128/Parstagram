@@ -28,7 +28,6 @@ import java.util.List;
 
 public class ProfileFragment extends PostsFragment {
 
-    private RecyclerView rvPosts;
     Button btnLogout;
 
     @Override
@@ -83,8 +82,9 @@ public class ProfileFragment extends PostsFragment {
                     Log.i(TAG, "Post: " + post.getDescription()
                             + ", username: " + post.getUser().getUsername());
                 }
-                allposts.addAll(posts);
-                adapter.notifyDataSetChanged();
+                adapter.clear();
+                adapter.addAll(posts);
+                swipeContainer.setRefreshing(false);
             }
         });
     }

@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -152,6 +153,8 @@ public class ComposeFragment extends Fragment {
             } else { // Result was a failure
                 Toast.makeText(getContext(), "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
             }
+        } else {
+            Log.i(TAG, "onActivityResult: " + requestCode);
         }
     }
 
@@ -172,6 +175,8 @@ public class ComposeFragment extends Fragment {
                 Log.i(TAG, "Post save was successful!");
                 etDescription.setText("");
                 ivPostImage.setImageResource(0);
+                Fragment fragment = new PostsFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.flContainer, fragment).commit();
             }
         });
     }
