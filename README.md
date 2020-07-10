@@ -2,7 +2,7 @@
 
 Parstagram is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: 15 hours spent in total
 
 ## User Stories
 
@@ -36,16 +36,16 @@ The following **stretch** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. when to use fragments and when to use activities
+2. how to access gallery of album on the phone
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/ziyangli128/Parstagram/blob/master/Parstagram%20Gif%20Walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [Kap](https://getkap.co/).
 
 ## Credits
 
@@ -53,10 +53,6 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 - [Android Async Http Client](http://loopj.com/android-async-http/) - networking library
 
-
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
