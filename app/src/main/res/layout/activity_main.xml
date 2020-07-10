@@ -23,6 +23,11 @@
             android:layout_gravity="center"
             android:src="@drawable/nav_logo_whiteout" />
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/camera_shadow_fill" />
+
     </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout

@@ -34,6 +34,7 @@ public class PostsFragment extends Fragment {
 
     public static final String TAG = "PostsFragment";
 
+
     protected RecyclerView rvPosts;
     private PostsAdapter adapter;
     protected List<Post> allposts;

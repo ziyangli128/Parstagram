@@ -13,4 +13,9 @@
     <string name="sign_up_submit">Sign up</string>
 
     <string name="log_out">Log out</string>
+
+    <string name="comment">Comment</string>
+    <string name="comment_error">Error while commenting!</string>
+    <string name="comment_empty">Comment cannot be empty!</string>
+    <string name="comment_success">Comment added successfully!</string>
 </resources>
