@@ -1,4 +1,4 @@
-package com.example.parstagram;
+package com.example.parstagram.adapters;
 
 import android.content.Context;
 import android.icu.text.SimpleDateFormat;
@@ -18,6 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.parstagram.R;
 import com.example.parstagram.activities.MainActivity;
 import com.example.parstagram.fragments.DetailFragment;
 import com.example.parstagram.fragments.ProfileFragment;

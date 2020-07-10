@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -16,7 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.parstagram.EndlessRecyclerViewScrollListener;
-import com.example.parstagram.PostsAdapter;
+import com.example.parstagram.adapters.PostsAdapter;
 import com.example.parstagram.R;
 import com.example.parstagram.models.Post;
 import com.parse.FindCallback;

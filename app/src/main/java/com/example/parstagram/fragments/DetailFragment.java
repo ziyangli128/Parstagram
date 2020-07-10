@@ -5,11 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,9 +20,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.parstagram.CommentsAdapter;
+import com.example.parstagram.adapters.CommentsAdapter;
 import com.example.parstagram.EndlessRecyclerViewScrollListener;
-import com.example.parstagram.PostsAdapter;
 import com.example.parstagram.R;
 import com.example.parstagram.models.Comment;
 import com.example.parstagram.models.Post;
@@ -34,8 +31,6 @@ import com.parse.ParseFile;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
-
-import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -219,6 +214,10 @@ public class DetailFragment extends Fragment {
                 });
                 post.setComments(comment.getObjectId());
                 post.saveInBackground();
+                // Update the adapter
+                allcomments.add(0, comment);
+                commentsAdapter.notifyItemInserted(0);
+                rvComments.smoothScrollToPosition(0);
             }
         });
     }
